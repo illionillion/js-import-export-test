@@ -1,7 +1,6 @@
 "use strict";
 export const test1=(ele)=>{
     alert(ele.dataset.val);
-    // return;
 };
 
 export class test1C{
@@ -13,8 +12,13 @@ export class test1C{
     this.num++;
     console.log(this.num);
     document.querySelector("#txt").value=this.num;
-    // return;
   }
 }
 
-// export test1;
+export const test=()=>{
+  alert("test!");
+}
+
+export function getEleId(ele){
+  return document.getElementById(ele);
+}
